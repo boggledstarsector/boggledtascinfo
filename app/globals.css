@@ -1,18 +1,16 @@
 @import "tailwindcss";
 
-body {
-  background: black;
+.body {
   color: white;
   /* Site-wide font: Verdana with fallbacks. */
   font-family: Verdana, Arial, sans-serif;
+  position: relative;
+  min-height: 100vh;
 }
 
+/* Starfield background container: full-viewport, behind content */
 .starfield-container {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
   z-index: -1;
-  overflow: hidden; /* Prevents scrollbars from showing */
 }
